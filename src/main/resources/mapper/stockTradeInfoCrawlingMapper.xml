@@ -14,7 +14,7 @@
 		                             stock_code,
 		                             trader_name,
 		                             stock_amount,
-									 stock_price,
+					     stock_price,
 		                             total_amount
 		                             )
 		VALUES <foreach collection="list" item="stockTradeInfo" separator=",">
