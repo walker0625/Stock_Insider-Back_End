@@ -4,12 +4,12 @@
 
 	<select id="getStockTradeInfo" resultType="com.minwoo.sic.dto.StockTradeInfo">
 		select info_id,
-			   trade_date,
+		       trade_date,
 		       trade_type,
 		       stock_code,
 		       trader_name,
 		       stock_amount,
-			   stock_price,
+		       stock_price,
 		       total_amount
 		from   stock_trade_info
 	</select>
