@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/sic?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&autoReconnection=true&allowPublicKeyRetrieval=true
+      username:
+      password:
+      
+  devtools: 
+      livereload: 
+        enabled: true 
+      restart:
+        enabled: true
+        
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    
+server:
+  port: 3000 

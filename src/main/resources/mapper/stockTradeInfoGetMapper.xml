@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.minwoo.sic.dao.StockTradeInfoGetMapper">
+
+	<select id="getStockTradeInfo" resultType="com.minwoo.sic.dto.StockTradeInfo">
+		select info_id,
+			   trade_date,
+		       trade_type,
+		       stock_code,
+		       trader_name,
+		       stock_amount,
+			   stock_price,
+		       total_amount
+		from   stock_trade_info
+	</select>
+
+</mapper>
